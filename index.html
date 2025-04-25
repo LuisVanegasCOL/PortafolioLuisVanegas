@@ -1,78 +1,475 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Portafolio de Luis Ricardo Vanegas Granados" />
-        <meta name="author" content="Luis Ricardo Vanegas Granados" />
-        <title>Luis Vanegas - Ingeniero en Ciberseguridad</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Luis Vanegas</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resumen</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Ingeniería &middot; Ciberseguridad &middot; Desarrollo Web</div></div>
-                                <div class="fs-3 fw-light text-muted">Especialista en Ciberseguridad & Desarrollo Web</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Protegiendo datos y desarrollando soluciones digitales</span></h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Ver CV</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Ver Proyectos</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre Mí</span></h2>
-                                <p class="lead fw-light mb-4">Soy Luis Ricardo Vanegas Granados, ingeniero de sistemas y especialista en ciberseguridad.</p>
-                                <p class="text-muted">Con experiencia en soporte técnico, análisis de datos, desarrollo web y ciberseguridad. Actualmente, estoy cursando un Máster en Diseño y Programación Web Full Stack en CIPSA Barcelona.</p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="https://www.linkedin.com/in/luis-ricardo-vanegas-granados-a4061920a/"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="mailto:luisvanegra@gmail.com"><i class="bi bi-envelope"></i></a>
-                                    <a class="text-gradient" href="tel:+573014350905"><i class="bi bi-telephone"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="bg-white py-4 mt-auto">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Portafolio de Luis Ricardo Vanegas Granados - Ingeniero en Sistemas y Especialista en Ciberseguridad" />
+    <meta name="author" content="Luis Ricardo Vanegas Granados" />
+    <title>Luis Vanegas - Ingeniero en Sistemas y Especialista en Ciberseguridad</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-gradient-primary-to-secondary shadow-lg">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Luis Vanegas 2024</div></div>
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="ti ti-code me-2"></i>
+                    <span class="fw-bolder">Luis Vanegas</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="index.html">
+                                <i class="ti ti-home me-1"></i>Inicio
+                                <span class="nav-link-underline"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#resumen">
+                                <i class="ti ti-file-description me-1"></i>Resumen
+                                <span class="nav-link-underline"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#proyectos">
+                                <i class="ti ti-apps me-1"></i>Proyectos
+                                <span class="nav-link-underline"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#contacto">
+                                <i class="ti ti-mail me-1"></i>Contacto
+                                <span class="nav-link-underline"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-outline-light rounded-pill px-4" href="assets/cv.pdf" download>
+                                <i class="ti ti-download me-1"></i>Descargar CV
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+        </nav>
+        <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-5">
+                        <div class="text-center text-xxl-start">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                <div class="text-uppercase">ING. SISTEMAS &middot; CIBERSEGURIDAD &middot; DESARROLLO FULLSTACK</div>
+                            </div>
+                            <div class="fs-3 fw-light text-muted">Especialista en Ciberseguridad & Desarrollo Web</div>
+                            <h1 class="display-3 fw-bolder mb-5">
+                                <span class="text-gradient d-inline">Protegiendo datos y desarrollando soluciones digitales</span>
+                            </h1>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Ver CV</a>
+                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Ver Proyectos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-light py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre Mí</span></h2>
+                            <div class="row align-items-center mt-5">
+                                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                    <div class="profile-image-container">
+                                        <img src="./assets/Perfil.jpg" alt="Luis Vanegas" class="rounded-circle img-fluid profile-image">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="lead fw-light mb-4">¡Hola! Soy Luis Vanegas, Ingeniero de Sistemas con más de 5 años de experiencia en el sector tecnológico. Mi pasión por la tecnología y la ciberseguridad me ha llevado a especializarme en el desarrollo de soluciones digitales seguras y eficientes.</p>
+                                    <p class="text-muted">Actualmente estoy ampliando mis conocimientos con un Máster en Desarrollo Web Full Stack y un Bootcamp en Java, complementando mi experiencia en administración de sistemas y ciberseguridad. Me considero un profesional resolutivo, con gran capacidad para optimizar procesos y desarrollar soluciones tecnológicas innovadoras.</p>
+                                    <div class="d-flex justify-content-center fs-2 gap-4 mt-4">
+                                        <a class="text-gradient" href="https://github.com/LuisVanegasCOL" target="_blank"><i class="ti ti-brand-github"></i></a>
+                                        <a class="text-gradient" href="https://www.linkedin.com/in/luis-ricardo-vanegas-granados-a4061920a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                        <a class="text-gradient" href="mailto:luisvanegraes@gmail.com"><i class="bi bi-envelope"></i></a>
+                                        <a class="text-gradient" href="tel:+34673431587"><i class="bi bi-telephone"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills_section py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Mis <span class="fw-bold">Habilidades Profesionales</span></span></h2>
+                            <div class="row g-4 mt-4">
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-shield-lock text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Ciberseguridad</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-server text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Administración de Sistemas</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-code text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Desarrollo de Software</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-network text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Infraestructura TI</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-cloud text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Virtualización</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-tools text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Gestión de Servicios IT</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-router text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Redes y Conectividad</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-light rounded-4 p-4 text-center">
+                                        <i class="ti ti-users text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Trabajo en Equipo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="technologies_section py-5 bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Tecnologías <span class="fw-bold">que Manejo</span></span></h2>
+                            <div class="row g-4 mt-4">
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-javascript text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">JavaScript</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-html5 text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">HTML5</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-css3 text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">CSS3</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-react text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">React</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-sass text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">SASS</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-git text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Git</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-figma text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Figma</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-nodejs text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Node.js</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-bootstrap text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Bootstrap</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="skill-box bg-white rounded-4 p-4 text-center">
+                                        <i class="ti ti-brand-tailwind text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-0">Tailwind</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="resumen">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Resumen Profesional</span></h2>
+                            <div class="row gx-5 mt-4">
+                                <div class="col-lg-6">
+                                    <h3 class="h4 mb-4">Experiencia Laboral</h3>
+                                    <div class="timeline-container">
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-building-skyscraper text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Técnico Informático</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>ZAIDAN IT Solutions para LIDL | Tarragona, España | 2025</p>
+                                                <ul class="mb-0">
+                                                    <li>Resolución de incidencias N1 y N2 en entornos corporativos</li>
+                                                    <li>Administración de Windows Server y sistemas Linux</li>
+                                                    <li>Gestión de tickets mediante ServiceNow y herramientas de monitoreo</li>
+                                                    <li>Configuración de equipos, redes LAN y periféricos</li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-building-skyscraper text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Técnico Informático</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>LACASADELPC | Reus, España | 2024</p>
+                                                <ul class="mb-0">
+                                                    <li>Diagnóstico y reparación de hardware (PCs, servidores)</li>
+                                                    <li>Instalación y mantenimiento de entornos Linux y Windows</li>
+                                                    <li>Soporte técnico personalizado y asesoría tecnológica a clientes</li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-building-skyscraper text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Ingeniero de Soporte y Proyectos</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>SELECT US | Medellín, Colombia | 2024</p>
+                                                <ul class="mb-0">
+                                                    <li>Implementación y soporte a sistemas biométricos ZKTeco</li>
+                                                    <li>Gestión de proyectos TI y soporte a software de prenómina</li>
+                                                    <li>Coordinación con clientes para solución de incidencias críticas</li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-building-skyscraper text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Analista de Soporte II</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>Teleperformance Colombia | Bogotá, Colombia | 2022 – 2024</p>
+                                                <ul class="mb-0">
+                                                    <li>Administración de Active Directory, Exchange y servidores Linux</li>
+                                                    <li>Configuración de redes LAN y acceso VPN</li>
+                                                    <li>Soporte técnico a plataformas de clientes internacionales</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="h4 mb-4">Formación Académica</h3>
+                                    <div class="timeline-container">
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-school text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Máster en Diseño y Desarrollo de Aplicaciones Web Full Stack</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>CIPSA, Barcelona | <span class="badge bg-info">2025 (En curso)</span></p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-school text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Bootcamp en Desarrollo Web Fullstack con Java</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>Tech Talent – Mas Carandell, España | <span class="badge bg-info">2025 (En curso)</span></p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-school text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Especialización en Ciberseguridad</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>Universidad Autónoma de Occidente, Cali – Colombia | <span class="badge bg-warning">2025 (Finaliza)</span></p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="ti ti-school text-primary me-2"></i>
+                                                    <h4 class="h5 mb-0">Ingeniería de Sistemas</h4>
+                                                </div>
+                                                <p class="text-muted mb-2"><i class="ti ti-map-pin me-1"></i>Universitaria de Colombia | <span class="badge bg-success">2022</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="proyectos">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Proyectos Destacados</span></h2>
+                            <div class="row g-4 mt-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <img src="https://via.placeholder.com/600x400?text=Sistema+de+Gestión+Empresarial" class="card-img-top" alt="Proyecto 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sistema de Gestión Empresarial</h5>
+                                            <p class="card-text">Desarrollo de una aplicación web para la gestión integral de empresas.</p>
+                                            <div class="mb-3">
+                                                <span class="badge bg-primary me-1">Java</span>
+                                                <span class="badge bg-primary me-1">Spring Boot</span>
+                                                <span class="badge bg-primary me-1">React</span>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                                                <a href="#" class="btn btn-outline-primary">Código Fuente</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <img src="https://via.placeholder.com/600x400?text=Plataforma+de+Ciberseguridad" class="card-img-top" alt="Proyecto 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Plataforma de Ciberseguridad</h5>
+                                            <p class="card-text">Sistema de monitoreo y prevención de amenazas cibernéticas.</p>
+                                            <div class="mb-3">
+                                                <span class="badge bg-primary me-1">Python</span>
+                                                <span class="badge bg-primary me-1">Docker</span>
+                                                <span class="badge bg-primary me-1">Kubernetes</span>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                                                <a href="#" class="btn btn-outline-primary">Código Fuente</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="contacto">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Contacto</span></h2>
+                            <div class="row gx-5 mt-4">
+                                <div class="col-lg-4">
+                                    <div class="contact-info">
+                                        <i class="ti ti-mail text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-1">Email</h5>
+                                        <p class="text-muted mb-0">luisvanegraes@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="contact-info">
+                                        <i class="ti ti-phone text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-1">Teléfono</h5>
+                                        <p class="text-muted mb-0">+34 673 431 587</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="contact-info">
+                                        <i class="ti ti-map-pin text-primary fs-1 mb-3"></i>
+                                        <h5 class="mb-1">Ubicación</h5>
+                                        <p class="text-muted mb-0">Madrid, España</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-lg-8 mx-auto">
+                                    <form id="contactForm" action="https://formspree.io/f/xovdvvgj" method="POST">
+                                        <div class="mb-3">
+                                            <input class="form-control" type="text" name="name" placeholder="Nombre" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input class="form-control" type="email" name="email" placeholder="Email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input class="form-control" type="text" name="subject" placeholder="Asunto" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary btn-lg" type="submit">Enviar Mensaje</button>
+                                        </div>
+                                        <div id="formResponse" class="mt-3 text-center"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0">Copyright &copy; Luis Vanegas 2024</div></div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
