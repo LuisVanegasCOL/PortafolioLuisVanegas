@@ -1,15 +1,29 @@
 /* Variables */
 :root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
+    --primary-color: #4e73df;
+    --secondary-color: #858796;
     --dark-color: #212529;
     --light-color: #f8f9fa;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f8f9fc;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4e73df;
+    --secondary-color: #858796;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
 }
 
 /* Global Styles */
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
 }
 
 /* Hero Section */
@@ -556,4 +570,238 @@ main {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--primary-color) }
+}
+
+/* Modo Oscuro */
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #858796;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f8f9fc;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4e73df;
+    --secondary-color: #858796;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.theme-switch-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Botón Volver Arriba */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+}
+
+/* Animaciones */
+.skill-box, .language-box, .skill-category {
+    transition: transform 0.3s ease;
+}
+
+.skill-box:hover, .language-box:hover, .skill-category:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsividad Mejorada */
+@media (max-width: 768px) {
+    .theme-switch-wrapper {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .back-to-top {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .skill-category {
+        margin-bottom: 20px;
+    }
+}
+
+/* Accesibilidad */
+:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Mapa del Sitio */
+.sitemap {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap li {
+    margin-bottom: 10px;
+}
+
+.sitemap a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.sitemap a:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para la sección de ciberseguridad */
+.skill-category {
+    height: 100%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.skill-category h4 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-category h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 15px;
+}
+
+.skill-category ul {
+    padding-left: 0;
+}
+
+.skill-category li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.skill-category li:hover {
+    transform: translateX(5px);
+    color: var(--primary-color);
+}
+
+.skill-category li i {
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+/* Ajustes responsivos para la sección de ciberseguridad */
+@media (max-width: 768px) {
+    .skill-category {
+        margin-bottom: 20px;
+    }
+    
+    .skill-category h4 {
+        font-size: 1.2rem;
+    }
+    
+    .skill-category h5 {
+        font-size: 0.9rem;
+    }
+    
+    .skill-category li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animación para los elementos de la lista */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skill-category li {
+    animation: slideIn 0.3s ease forwards;
+    animation-delay: calc(var(--i) * 0.1s);
 } 

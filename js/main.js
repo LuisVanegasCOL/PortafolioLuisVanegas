@@ -92,48 +92,57 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Botón Volver Arriba
-const backToTop = document.querySelector('.back-to-top');
-if (backToTop) {
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
-    });
-
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-}
-
 // Modo Oscuro
-const darkModeToggle = document.querySelector('.dark-mode-toggle');
-if (darkModeToggle) {
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+// Botón Volver Arriba
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
-}
+});
 
-// Verificar preferencia guardada
-if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-}
-
-// Animaciones al Scroll
+// Animaciones al hacer scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.section, .card, .timeline-item');
+    const elements = document.querySelectorAll('.skill-box, .language-box, .skill-category');
+    
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight;
+        const screenPosition = window.innerHeight / 1.3;
+        
         if (elementPosition < screenPosition) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
+            element.classList.add('animate');
         }
     });
 };
@@ -339,4 +348,9 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.opacity = '1';
         setTimeout(typeWriter, 1000); // Pausa inicial más larga
     }
+});
+
+// Animación para los elementos de la lista de ciberseguridad
+document.querySelectorAll('.skill-category li').forEach((item, index) => {
+    item.style.setProperty('--i', index);
 }); 
